@@ -1,0 +1,144 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#banner{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#bannerChild{
+    height: 100vh;
+    width: 400%;
+    overflow: hidden;
+    float: left;
+    animation: infinite slider 20s 2s;
+}
+
+#imageCon{
+    height: 100vh;
+    width: 25%;
+    overflow: hidden;
+    float: left;
+}
+
+#imageCon:nth-child(1){
+    background: url('../img/cebucity.jpg') 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#imageCon:nth-child(2){
+    background: url('../img/mandauecity.jpg') 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#imageCon:nth-child(3){
+    background: url('../img/lapulapucity.jpg') 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#imageCon:nth-child(4){
+    background: url('../img/talisaycity.jpg') 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes slider{
+    20%{
+        margin-left:  -100%;
+    }
+    40%{
+        margin-left:  -200%;
+    }
+    60%{
+        margin-left:  -200%;
+    }
+    80%{
+        margin-left:  -300%;
+    }
+    100%{
+        margin-left:  -300%;
+    }
+}
+
+#selector{
+    position: fixed;
+    top: 0;
+    padding: 1rem 1rem;
+    background-color: #3b5998;
+}
+
+#selector:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#navbar{
+   position: fixed;
+   top: 0;
+   padding: 1rem 1rem;
+   background-color: #fff;
+   height: 2.1rem;
+   left: 4rem;
+   color: #3b5998;
+   font-size: 3vh;
+}
+
+#navbar:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 3.5vh;
+}
+
+.side-nav{
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 5;
+    height: 10000vh;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: ease-in-out 0.3;
+}
+
+.side-nav a{
+    display: block;
+    padding: 1rem 1rem 1rem 3rem;
+    text-decoration: none;
+    font-size: 3vh;
+    color: #fff;
+}
+
+.side-nav a:hover{
+    background-color: #fff;
+    color: #111;
+    font-size: 3.5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
